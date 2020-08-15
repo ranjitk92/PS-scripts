@@ -1,0 +1,2 @@
+$clientvariable = Import-Excel C:\Users\Ranjit\Documents\GitHub\ClientListTest\ClientTestListwithMacro.xlsm | Select-Object -ExpandProperty ClientName;Write-Host "vso[task.setvariable variable=clientname]$clientvariable"
+$clientvariable
